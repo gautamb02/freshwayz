@@ -1,7 +1,9 @@
 "use client"
-import { Menu, Search, X } from "lucide-react";
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Menu, Search, X } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -12,12 +14,12 @@ export function Header() {
                     {/* Logo */}
                     <div>
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src="/logo.png" alt="logo" />
+                        <Image src="/logo.png" alt="logo" />
                     </div>
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex space-x-8">
-                        <a href="#" className="text-white bg-primary transition-colors py-3.5 px-5">Home</a>
-                        <a href="#" className="text-white bg-primary transition-colors py-3.5 px-5">About</a>
+                        <Link href="/home" className="text-white bg-primary transition-colors py-3.5 px-5">Home</Link>
+                        <Link href="/about" className="text-white bg-primary transition-colors py-3.5 px-5">About</Link>
                     </nav>
 
                     {/* CTA Button */}
@@ -38,7 +40,7 @@ export function Header() {
                 <div className="w-full md:block hidden mt-4 pb-4">
                     <div className="w-lg border px-1 flex rounded-sm">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img alt="search-icon" src="/header/menuserch.svg" className="px-3 py-1 border-r" />
+                        <Image alt="search-icon" src="/header/menuserch.svg" className="px-3 py-1 border-r" />
                         <div className="flex items-center justify-between w-full">
                             <input type="text" placeholder="Search for product..." className="border-none bg-background outline-none px-4" />
                             <Button size="icon" variant="default">
