@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Navbar() {
     return (
         <nav className="flex items-center justify-between px-6 py-3 shadow-md bg-white">
@@ -5,7 +8,7 @@ export default function Navbar() {
             <div className="flex items-center gap-6">
                 {/* Logo */}
                 <div className="flex items-center gap-2">
-                    <img
+                    <Image
                         src="/logo.png"
                         alt="FreshWayz Logo"
                         className="h-10 w-auto"
@@ -56,15 +59,15 @@ export default function Navbar() {
 
             {/* Center: Navigation Links */}
             <div className="flex items-center gap-6">
-                <a href="#" className="text-gray-800 hover:text-green-600">
+                <Link href="/" className="text-gray-800 hover:text-green-600">
                     HOME
-                </a>
-                <a
-                    href="#"
+                </Link>
+                <Link
+                    href="/about"
                     className="bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700"
                 >
                     ABOUT US
-                </a>
+                </Link>
             </div>
 
             {/* Right: Contact */}

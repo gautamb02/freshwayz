@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutHeroSection() {
     return (
         <section className="w-full flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-10 md:py-16 bg-white">
@@ -19,22 +21,22 @@ export default function AboutHeroSection() {
 
             {/* Right Side - Images */}
             <div className="md:w-1/2 w-full grid grid-cols-2 gap-4 mt-8 md:mt-0">
-                <img
+                <Image
                     src="/about/flour-sack.png"
                     alt="Flour and Grains"
                     className="w-full max-h-48 object-contain rounded-lg "
                 />
-                <img
+                <Image
                     src="/about/veggies-basket.png"
                     alt="Vegetable Basket"
                     className="w-full max-h-48 object-contain rounded-lg "
                 />
-                <img
+                <Image
                     src="/about/dry-fruits.png"
                     alt="Dry Fruits"
                     className="w-full max-h-48 object-contain rounded-lg "
                 />
-                <img
+                <Image
                     src="/about/grains.png"
                     alt="Grains"
                     className="w-full max-h-48 object-contain rounded-lg "

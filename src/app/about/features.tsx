@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function FeaturesSection() {
     return (
         <section className="w-full flex justify-between px-16 py-16 bg-white gap-12">
@@ -21,7 +23,7 @@ export default function FeaturesSection() {
             <div className="w-1/3 flex flex-col items-center gap-12">
                 {/* Top Oval Image */}
                 <div className="w-72 h-[400px] ">
-                    <img
+                    <Image
                         src="/about/bottle-bag.png"
                         alt="Grocery Bag"
                         className="w-full h-full object-cover"
@@ -29,7 +31,7 @@ export default function FeaturesSection() {
                 </div>
                 {/* Bottom Circle Image */}
                 <div className="w-72 h-72 rounded-full overflow-hidden shadow-md">
-                    <img
+                    <Image
                         src="/about/veg-bag.png"
                         alt="Reusable Bag"
                         className="w-full h-full object-cover"
