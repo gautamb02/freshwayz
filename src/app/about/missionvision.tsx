@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 const MissionVision = () => {
     return (
@@ -7,30 +6,24 @@ const MissionVision = () => {
             <div className="relative w-96 h-96 flex-shrink-0">
                 {/* Back image */}
                 <div className="absolute top-8 left-8 w-72 h-72 rounded-3xl overflow-hidden opacity-40" style={{ filter: "blur(2px)" }}>
-                    <Image
+                    <img
                         src="/about/recipe.png" alt="Food background"
-                        layout="fill"
-                        objectFit="cover"
-                        priority
+
                     />
                 </div>
                 {/* Middle image */}
                 <div className="absolute top-4 left-4 w-72 h-72 rounded-3xl overflow-hidden opacity-70" style={{ filter: "brightness(0.7)" }}>
-                    <Image
+                    <img
                         src="/about/recipe.png"
                         alt="Food ingredients"
-                        layout="fill"
-                        objectFit="cover"
-                        priority
+
                     />
                 </div>
                 {/* Front image */}
                 <div className="relative w-72 h-72 rounded-3xl overflow-hidden rotate-6 shadow-lg">
-                    <Image
+                    <img
                         src="/about/recipe.png" alt="Person holding groceries"
-                        layout="fill"
-                        objectFit="cover"
-                        priority
+
                     />
                 </div>
             </div>

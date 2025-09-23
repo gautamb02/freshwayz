@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 export default function DifferentSection() {
     return (
@@ -18,10 +17,10 @@ export default function DifferentSection() {
                     <div className="flex-1 flex items-center justify-between bg-white p-4 border-2 border-black rounded-3xl mb-4 last:mb-0">
 
                         <p className="p-4 text-2xl">Learn with Us: Watch videos and read posts about the medicinal benefits of our products.</p>
-                        <Image className="w-34" src="/about/recipe1.png" alt="recipe1" />
+                        <img className="w-34" src="/about/recipe1.png" alt="recipe1" />
                     </div>
                     <div className="flex-1 flex items-center justify-between bg-[#4fce73] p-4 rounded-[1000px]  mb-4 last:mb-0">
-                        <Image className="w-34" src="/about/recipe1.png" alt="recipe1" />
+                        <img className="w-34" src="/about/recipe1.png" alt="recipe1" />
                         <p className="p-4 text-2xl">
                             AI Powered Personalized Guidance:
                             Discover what suits your unique health needs as per your BMI and Medical History
@@ -31,13 +30,13 @@ export default function DifferentSection() {
                     <div className="flex-1 flex items-center justify-between bg-[#f1f2ed] p-4 rounded-3xl mb-4 last:mb-0">
 
                         <p className="p-4 text-2xl">Community of Care: Be part of a wellness movement that uplifts and supports you.</p>
-                        <Image className="w-34" src="/about/recipe1.png" alt="recipe1" />
+                        <img className="w-34" src="/about/recipe1.png" alt="recipe1" />
                     </div>
                 </div>
 
                 {/* Right column: image naturally controls height */}
                 <div className="w-[40%]">
-                    <Image
+                    <img
                         src="/about/recipe.png"
                         alt="Reusable Bag"
                         className="w-full h-auto object-cover rounded"

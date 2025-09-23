@@ -1,7 +1,6 @@
 "use client"
 import { Button } from "@/components/ui/button";
 import { Menu, Search, X } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 export function Header() {
@@ -14,7 +13,7 @@ export function Header() {
                     {/* Logo */}
                     <div>
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <Image src="/logo.png" alt="logo" />
+                        <img src="/logo.png" alt="logo" />
                     </div>
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex space-x-8">
@@ -40,7 +39,7 @@ export function Header() {
                 <div className="w-full md:block hidden mt-4 pb-4">
                     <div className="w-lg border px-1 flex rounded-sm">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <Image alt="search-icon" src="/header/menuserch.svg" className="px-3 py-1 border-r" />
+                        <img alt="search-icon" src="/header/menuserch.svg" className="px-3 py-1 border-r" />
                         <div className="flex items-center justify-between w-full">
                             <input type="text" placeholder="Search for product..." className="border-none bg-background outline-none px-4" />
                             <Button size="icon" variant="default">
@@ -53,14 +52,20 @@ export function Header() {
                 {isMenuOpen && (
                     <div className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg border-t">
                         <nav className="px-4 py-4 space-y-3">
-                            <a href="#" className="block text-gray-700 hover:text-green-600 transition-colors">Home</a>
-                            <a href="#" className="block text-gray-700 hover:text-green-600 transition-colors">About</a>
-                            <a href="#" className="block text-gray-700 hover:text-green-600 transition-colors">Services</a>
-                            <a href="#" className="block text-gray-700 hover:text-green-600 transition-colors">Menu</a>
-                            <a href="#" className="block text-gray-700 hover:text-green-600 transition-colors">Contact</a>
-                            <Button className="w-full bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full mt-4">
-                                Get Started
-                            </Button>
+                            <Link href="/home" className="text-white bg-primary transition-colors py-3.5 px-5">Home</Link>
+                            <Link href="/about" className="text-white bg-primary transition-colors py-3.5 px-5">About</Link>
+                            <div className="w-full block mt-4 pb-4">
+                                <div className="w-lg border px-1 flex rounded-sm">
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img alt="search-icon" src="/header/menuserch.svg" className="px-3 py-1 border-r" />
+                                    <div className="flex items-center justify-between w-full">
+                                        <input type="text" placeholder="Search for product..." className="border-none bg-background outline-none px-4" />
+                                        <Button size="icon" variant="default">
+                                            <Search />
+                                        </Button>
+                                    </div>
+                                </div>
+                            </div>
                         </nav>
                     </div>
                 )}
