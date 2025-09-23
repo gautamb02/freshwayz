@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 export default function AboutHeroSection() {
     return (
@@ -21,22 +20,22 @@ export default function AboutHeroSection() {
 
             {/* Right Side - Images */}
             <div className="md:w-1/2 w-full grid grid-cols-2 gap-4 mt-8 md:mt-0">
-                <Image
+                <img
                     src="/about/flour-sack.png"
                     alt="Flour and Grains"
                     className="w-full max-h-48 object-contain rounded-lg "
                 />
-                <Image
+                <img
                     src="/about/veggies-basket.png"
                     alt="Vegetable Basket"
                     className="w-full max-h-48 object-contain rounded-lg "
                 />
-                <Image
+                <img
                     src="/about/dry-fruits.png"
                     alt="Dry Fruits"
                     className="w-full max-h-48 object-contain rounded-lg "
                 />
-                <Image
+                <img
                     src="/about/grains.png"
                     alt="Grains"
                     className="w-full max-h-48 object-contain rounded-lg "

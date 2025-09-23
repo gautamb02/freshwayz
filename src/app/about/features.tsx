@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 export default function FeaturesSection() {
     return (
@@ -23,7 +22,7 @@ export default function FeaturesSection() {
             <div className="w-1/3 flex flex-col items-center gap-12">
                 {/* Top Oval Image */}
                 <div className="w-72 h-[400px] ">
-                    <Image
+                    <img
                         src="/about/bottle-bag.png"
                         alt="Grocery Bag"
                         className="w-full h-full object-cover"
@@ -31,7 +30,7 @@ export default function FeaturesSection() {
                 </div>
                 {/* Bottom Circle Image */}
                 <div className="w-72 h-72 rounded-full overflow-hidden shadow-md">
-                    <Image
+                    <img
                         src="/about/veg-bag.png"
                         alt="Reusable Bag"
                         className="w-full h-full object-cover"
